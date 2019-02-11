@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+.container{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+.box{
+    margin: 50px auto;
+    animation: rotate 1s infinite;
+
+}
+.inner-box{
+    width: 50px;
+    height: 50px;
+    background-color: #6441a5;
+
+    animation: scale 1s infinite;
+    transition: .2s all;
+    margin: auto;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+        
+    }
+    to{
+        transform: rotate(360deg);
+        
+    }
+}
+@keyframes scale{
+    from{
+        transform: scale(1);
+        border-radius: 5%;
+    }
+    to{
+        transform: scale(2);
+        border-radius: 50%;
+    }
+}

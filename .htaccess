@@ -1,0 +1,73 @@
+# Turn on Rewrite Engine On
+RewriteEngine on
+
+RewriteRule ^gracias-por-todo aviso.html [NC,L]
+
+RewriteRule ^profile profile.php [NC,L]
+
+RewriteRule ^chat chat.php [NC,L]
+
+RewriteRule ^pokedex pokedex.php [NC,L]
+
+RewriteRule ^newpoll newpoll.php [NC,L]
+
+RewriteRule ^portal portal.php [NC,L]
+
+RewriteRule ^mensajes messages.php [NC,L]
+
+RewriteRule ^newthread newthread.php [NC,L]
+
+RewriteRule ^fusiondelasemana fusiondelasemana.php [NC,L]
+
+RewriteRule ^randompokemon randompokemon.php [NC,L]
+
+RewriteRule ^equipo team.php [NC,L]
+
+RewriteRule ^incidencia incidencia.php [NC,L]
+
+RewriteRule ^misincidencias misincidencias.php [NC,L]
+
+RewriteRule ^misparticipaciones misparticipaciones.php [NC,L]
+
+RewriteRule ^ayuda help.php [NC,L]
+
+RewriteRule ^notificacion notify.php [NC,L]
+
+RewriteRule ^test test.php [NC,L]
+
+RewriteRule ^casino casino.php [NC,L]
+
+RewriteRule ^registro register.php [NC,L]
+
+RewriteRule ^recuperacion recover.php [NC,L]
+
+RewriteRule ^premios premios.php [NC,L]
+
+RewriteRule ^museo museo.php [NC,L]
+
+RewriteRule ^teamrocket teamRocket.php [NC,L]
+
+RewriteRule ^arte arte_pokemon.php [NC,L]
+
+# Rewrite for user.php?u=xxxx
+RewriteRule ^user/([0-9a-zA-Z]+) user.php?u=$1 [NC,L]
+
+# Rewrite for posts.php?p=xxxx
+RewriteRule ^post/([0-9a-zA-Z]+) posts.php?p=$1 [NC,L]
+
+# Rewrite for viewer.php?m=xxxx
+RewriteRule ^mensaje/([0-9a-zA-Z]+) viewer.php?m=$1 [NC,L]
+
+RewriteRule ^searchpost/([0-9a-zA-Z]+) searchPost.php?post=$1 [NC,L]
+
+RewriteRule ^categoria/([0-9a-zA-Z]+) searchcategory.php?cat=$1 [NC,L]
+
+RewriteRule ^passwordreset/([0-9a-zA-Z]+) passwordreset.php?id=$1 [NC,L]
+
+RewriteRule ^visorincidencias/([0-9a-zA-Z]+) useriviewer.php?id=$1 [NC,L]
+
+RewriteRule ^encuesta/([0-9a-zA-Z]+) encuesta.php?p=$1 [NC,L]
+
+RewriteRule ^galeriafusion/([0-9a-zA-Z]+) vistaMuseo.php?m=$1 [NC,L]
+
+
